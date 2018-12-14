@@ -30,14 +30,19 @@ git add .
 git commit -m "initial commit"
 ```
 
+### Heroku側
 
+```
 heroku login
+```
+
 
 * Heroku側にappを作成
 
+```
 heroku apps:create heroku-go-matsumoto-test --buildpack heroku/go
 heroku open --app heroku-go-matsumoto-test
-
+```
 
 
 * Herokuにデプロイ
