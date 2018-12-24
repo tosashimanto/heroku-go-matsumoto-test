@@ -67,3 +67,16 @@ heroku logs --tail
 https://rocky-castle-914423.herokuapp.com/gsurvey_api/v1/constructions
 
 ```
+
+
+---
+### CircleCI
+
+```
+circleci config validate
+
+circleci local execute
+
+
+```
+
