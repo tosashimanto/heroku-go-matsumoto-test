@@ -1,24 +1,7 @@
-
 package main
 
-import (
-	"fmt"
-	"log"
-	"net/http"
-	"os"
-)
+import "github.com/tosashimanto/heroku-go-matsumoto-test/controller"
 
 func main() {
-	port := os.Getenv("PORT")
-	if port == "" {
-		log.Fatal("$PORT must be set")
-	}
-
-	http.HandleFunc("/", handler)
-	http.ListenAndServe(":"+port, nil)
+	controller.Handler()
 }
-
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello, %q", r.URL.Path[1:])
-}
-

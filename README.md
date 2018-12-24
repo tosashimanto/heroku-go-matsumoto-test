@@ -56,3 +56,14 @@ heroku	https://git.heroku.com/heroku-go-matsumoto-test.git (push)
 
 ```
 
+
+* ログ確認
+```
+heroku logs --tail
+```
+
+* アクセス例
+```
+https://rocky-castle-914423.herokuapp.com/gsurvey_api/v1/constructions
+
+```

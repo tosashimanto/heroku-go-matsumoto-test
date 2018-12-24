@@ -1,0 +1,17 @@
+{{ define "index" }}
+<!DOCType html>
+<html>
+<head>
+    <meta charaset="utf-8" />
+    <title>gorilla test</title>
+</head>
+<body>
+<h3>gorilla test (送信テスト)</h3>
+<form method="post" action="/save">
+    <input type="text" name="test1" value="" /><br />
+    <input type="text" name="test2" value="" /><br />
+    <input type="submit" value="送信" />
+</form>
+</body>
+</html>
+{{ end }}
